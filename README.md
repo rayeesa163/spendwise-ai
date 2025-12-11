@@ -1,73 +1,96 @@
-# Welcome to your Lovable project
+Perfect ✅ since your project **LeadSort AI – Vendor Prioritization and Spend Optimization (SpendWise AI)** is deployed at
+🔗 **[https://spendwise-ai-drab.vercel.app/](https://spendwise-ai-drab.vercel.app/)**
 
-## Project info
+Here’s a professional, **copy-paste-ready README.md** file you can add to your GitHub repo 👇
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+---
 
-## How can I edit this code?
+````markdown
+# 🧠 LeadSort AI – Vendor Prioritization and Spend Optimization
 
-There are several ways of editing your application.
+🚀 **Live Demo:** [https://spendwise-ai-drab.vercel.app/](https://spendwise-ai-drab.vercel.app/)
 
-**Use Lovable**
+LeadSort AI (SpendWise AI) is an intelligent **vendor analytics and spend optimization dashboard** built to help finance and procurement teams make smarter, data-driven decisions.  
+It visualizes vendor KPIs, predicts optimal vendor choices, and provides actionable insights for cost reduction.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🔍 Key Features
 
-**Use your preferred IDE**
+✅ **AI-Driven Vendor Prioritization**
+- Calculates a composite vendor score using quality, delivery, cost efficiency, and spend trend.
+- Displays a “Priority Badge” beside each vendor name.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+✅ **Interactive Analytics Dashboard**
+- Real-time charts for total spend, monthly trends, and category-wise distribution.
+- Vendor comparison view with side-by-side performance visualization.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+✅ **Vendor Management**
+- Add, edit, and filter vendors by name, region, or category.
+- Responsive modal form for adding new vendors with KPI metrics.
 
-Follow these steps:
+✅ **AI Recommendations (Preview)**
+- Intelligent suggestions for top vendors to allocate spend next quarter.
+- Uses a weighted scoring algorithm (0.4×Quality + 0.3×Delivery + 0.2×Cost + 0.1×Trend).
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+✅ **Modern UI**
+- Built with a **dark theme** and accent color `#6366F1`.
+- Sidebar navigation: `Dashboard | Vendors | Insights | Settings`.
+- Fully responsive for desktop and tablet.
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+---
 
-# Step 3: Install the necessary dependencies.
-npm i
+## 🧩 Tech Stack
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+| Layer | Technologies |
+|-------|---------------|
+| Frontend | React + TailwindCSS |
+| AI/Logic | JavaScript (Vendor Score Formula) |
+| Hosting | Vercel |
+| Future Integration | Lovable Cloud / FastAPI backend for data persistence |
+
+---
+
+## ⚙️ Installation (Local Setup)
+
+```bash
+# 1️⃣ Clone this repository
+git clone https://github.com/<your-username>/LeadSort-AI.git
+
+# 2️⃣ Navigate to folder
+cd LeadSort-AI
+
+# 3️⃣ Install dependencies
+npm install
+
+# 4️⃣ Start the development server
 npm run dev
-```
+````
 
-**Edit a file directly in GitHub**
+Then open 👉 `http://localhost:3000` in your browser.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+---
 
-**Use GitHub Codespaces**
+## 📈 Future Roadmap
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+* ✅ Add backend via Lovable Cloud or FastAPI
+* 🔄 Connect real vendor data using APIs or Excel uploads
+* 📊 Add forecasting for spend trend using Prophet or ARIMA
+* 💬 Add AI chat assistant for procurement insights
 
-## What technologies are used for this project?
+---
 
-This project is built with:
+## 👩‍💻 Author
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+**S. Rayeesa Tabusum**
+AI/ML Engineer • Data Analyst • Full Stack Developer
+🔗 [GitHub](https://github.com/rayeesa163) | [Portfolio](https://rayeesa163.github.io/)
 
-## How can I deploy this project?
+---
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+## 🪄 License
 
-## Can I connect a custom domain to my Lovable project?
+This project is open-source under the **MIT License**.
 
-Yes, you can!
+---
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
