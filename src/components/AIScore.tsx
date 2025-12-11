@@ -7,9 +7,9 @@ interface AIScoreProps {
 
 export const AIScore = ({ score, size = "md" }: AIScoreProps) => {
   const getScoreColor = (score: number) => {
-    if (score >= 80) return "text-emerald-500 bg-emerald-500/10";
-    if (score >= 60) return "text-amber-500 bg-amber-500/10";
-    return "text-red-500 bg-red-500/10";
+    if (score >= 75) return "text-emerald-500 bg-emerald-500/10";
+    if (score >= 50) return "text-amber-500 bg-amber-500/10";
+    return "text-destructive bg-destructive/10";
   };
 
   const sizeClasses = {
@@ -37,8 +37,8 @@ interface PriorityBadgeProps {
 
 export const PriorityBadge = ({ priority }: PriorityBadgeProps) => {
   const priorityConfig = {
-    high: { label: "High", className: "bg-accent/10 text-accent border-accent/20" },
-    medium: { label: "Medium", className: "bg-amber-500/10 text-amber-600 border-amber-500/20" },
+    high: { label: "High", className: "bg-primary/10 text-primary border-primary/20" },
+    medium: { label: "Medium", className: "bg-amber-500/10 text-amber-500 border-amber-500/20" },
     low: { label: "Low", className: "bg-muted text-muted-foreground border-border" },
   };
 

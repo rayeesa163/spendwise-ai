@@ -1,5 +1,7 @@
 import { ArrowDown, ArrowUp, DollarSign, Package, TrendingUp, Zap } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { useVendors } from "@/context/VendorContext";
+import { formatCurrency } from "@/lib/vendorData";
 
 interface StatCardProps {
   title: string;
@@ -16,13 +18,13 @@ const StatCard = ({ title, value, change, changeType, icon, delay = 0 }: StatCar
     style={{ animationDelay: `${delay}ms` }}
   >
     <div className="flex items-start justify-between mb-4">
-      <div className="p-2.5 rounded-lg bg-accent/10">
+      <div className="p-2.5 rounded-lg bg-primary/10">
         {icon}
       </div>
       <div className={cn(
         "flex items-center gap-1 text-xs font-medium px-2 py-1 rounded-full",
-        changeType === "positive" && "text-emerald-600 bg-emerald-50",
-        changeType === "negative" && "text-red-600 bg-red-50",
+        changeType === "positive" && "text-emerald-500 bg-emerald-500/10",
+        changeType === "negative" && "text-destructive bg-destructive/10",
         changeType === "neutral" && "text-muted-foreground bg-muted"
       )}>
         {changeType === "positive" && <ArrowUp className="h-3 w-3" />}
@@ -36,34 +38,40 @@ const StatCard = ({ title, value, change, changeType, icon, delay = 0 }: StatCar
 );
 
 export const StatsGrid = () => {
+  const { vendors } = useVendors();
+  
+  const totalSpend = vendors.reduce((sum, v) => sum + v.spend, 0);
+  const estimatedSavings = Math.round(totalSpend * 0.14);
+  const avgEfficiency = Math.round(vendors.reduce((sum, v) => sum + v.costEfficiency, 0) / vendors.length);
+
   const stats: StatCardProps[] = [
     {
       title: "Total Spend",
-      value: "$2.4M",
+      value: formatCurrency(totalSpend),
       change: "+12.5%",
       changeType: "positive",
-      icon: <DollarSign className="h-5 w-5 text-accent" />,
+      icon: <DollarSign className="h-5 w-5 text-primary" />,
     },
     {
       title: "Active Vendors",
-      value: "147",
+      value: vendors.length.toString(),
       change: "+8 this month",
       changeType: "positive",
-      icon: <Package className="h-5 w-5 text-accent" />,
+      icon: <Package className="h-5 w-5 text-primary" />,
     },
     {
       title: "AI Savings",
-      value: "$342K",
+      value: formatCurrency(estimatedSavings),
       change: "+24.3%",
       changeType: "positive",
-      icon: <Zap className="h-5 w-5 text-accent" />,
+      icon: <Zap className="h-5 w-5 text-primary" />,
     },
     {
       title: "Efficiency Score",
-      value: "94.2%",
+      value: `${avgEfficiency}%`,
       change: "-1.2%",
       changeType: "negative",
-      icon: <TrendingUp className="h-5 w-5 text-accent" />,
+      icon: <TrendingUp className="h-5 w-5 text-primary" />,
     },
   ];
 
