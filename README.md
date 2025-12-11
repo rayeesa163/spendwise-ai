@@ -1,9 +1,5 @@
-Perfect ✅ since your project **LeadSort AI – Vendor Prioritization and Spend Optimization (SpendWise AI)** is deployed at
+**LeadSort AI – Vendor Prioritization and Spend Optimization (SpendWise AI)** is deployed at
 🔗 **[https://spendwise-ai-drab.vercel.app/](https://spendwise-ai-drab.vercel.app/)**
-
-Here’s a professional, **copy-paste-ready README.md** file you can add to your GitHub repo 👇
-
----
 
 ````markdown
 # 🧠 LeadSort AI – Vendor Prioritization and Spend Optimization
