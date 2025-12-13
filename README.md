@@ -65,16 +65,7 @@ npm run dev
 
 Then open 👉 `http://localhost:3000` in your browser.
 
----
 
-## 📈 Future Roadmap
-
-* ✅ Add backend via Lovable Cloud or FastAPI
-* 🔄 Connect real vendor data using APIs or Excel uploads
-* 📊 Add forecasting for spend trend using Prophet or ARIMA
-* 💬 Add AI chat assistant for procurement insights
-
----
 
 ## 👩‍💻 Author
 
